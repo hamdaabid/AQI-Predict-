@@ -1,0 +1,28 @@
+# Core ML & data
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+xgboost>=2.0
+
+# Deep learning (optional — comment out if not needed)
+tensorflow>=2.15; python_version>="3.9"
+
+# Explainability
+shap>=0.44
+
+# Visualisation & dashboard
+streamlit>=1.32
+plotly>=5.18
+
+# HTTP
+requests>=2.31
+
+# Feature store (optional — only needed with Hopsworks)
+# hopsworks>=3.7
+
+# CI / testing
+pytest>=8.1
+pytest-cov>=5.0
+
+# Utilities
+python-dotenv>=1.0
