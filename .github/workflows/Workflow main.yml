@@ -18,3 +18,15 @@ name: AQI Prediction Pipeline
         description: "Days to backfill (backfill pipeline only)"
         required: false
         default: "90"
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display inputs
+        run: |
+          echo "Pipeline: ${{ github.event.inputs.pipeline }}"
+          echo "Backfill Days: ${{ github.event.inputs.backfill_days }}"
