@@ -1,12 +1,12 @@
 name: AQI Prediction Pipeline
 
 on:
-  # Feature pipeline: every hour
+  
   schedule:
-    - cron: "0 * * * *"         # Feature pipeline — top of every hour
-    - cron: "0 2 * * *"         # Training pipeline — 02:00 UTC daily
+    - cron: "0 * * * *"         
+    - cron: "0 2 * * *"         
 
-  # Manual trigger (useful for backfill, debugging)
+ 
   workflow_dispatch:
     inputs:
       pipeline:
